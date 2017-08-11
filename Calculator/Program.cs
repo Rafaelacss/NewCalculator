@@ -9,7 +9,7 @@ using System.Windows.Forms;
  * Student number: 300910503
  * Date: August, 11, 2017
  * Description: Calculator Demo Project
- * Version: 0.2 - created splash form 
+ * Version: 0.2 - started SplashForm first
  */
 
 namespace Calculator
@@ -24,7 +24,7 @@ namespace Calculator
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new SplashForm());
         }
     }
 }
