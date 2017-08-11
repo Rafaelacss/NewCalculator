@@ -8,12 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-/**
- * Testing commit
- * 
+/*
+ * Name: Rafaela Silveira
+ * Student number: 300910503
+ * Date: August, 11, 2017
+ * Description: Calculator Demo Project
+ * Version: 0.3 - Transfered project to a new solution 
  */
 
-namespace NewCalculator
+namespace Calculator
 {
     public partial class Form1 : Form
     {
@@ -23,6 +26,16 @@ namespace NewCalculator
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ClearButton_Click(object sender, EventArgs e)
         {
 
         }

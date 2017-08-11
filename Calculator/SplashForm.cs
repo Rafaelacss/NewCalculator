@@ -8,23 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-/**
- * Testing commit
- * 
- */
-
-namespace NewCalculator
+namespace Calculator
 {
-    public partial class Form1 : Form
+    public partial class SplashForm : Form
     {
-        public Form1()
+        public SplashForm()
         {
             InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
