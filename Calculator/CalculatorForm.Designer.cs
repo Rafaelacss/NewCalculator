@@ -1,6 +1,6 @@
 ﻿namespace Calculator
 {
-    partial class Form1
+    partial class CalculatorForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,28 +30,39 @@
         {
             System.Windows.Forms.Button ThreeButton;
             this.ButtonTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.ResultTextBox = new System.Windows.Forms.TextBox();
-            this.ClearButton = new System.Windows.Forms.Button();
-            this.BackspaceButton = new System.Windows.Forms.Button();
-            this.DivideButton = new System.Windows.Forms.Button();
-            this.SevenButton = new System.Windows.Forms.Button();
-            this.EightButton = new System.Windows.Forms.Button();
-            this.NineButton = new System.Windows.Forms.Button();
-            this.TimesButton = new System.Windows.Forms.Button();
-            this.FourButton = new System.Windows.Forms.Button();
-            this.FiveButton = new System.Windows.Forms.Button();
-            this.SixButton = new System.Windows.Forms.Button();
-            this.MinusButton = new System.Windows.Forms.Button();
-            this.OneButton = new System.Windows.Forms.Button();
-            this.TwoButton = new System.Windows.Forms.Button();
-            this.PlusButton = new System.Windows.Forms.Button();
-            this.PlusMinusButton = new System.Windows.Forms.Button();
-            this.ZeroButton = new System.Windows.Forms.Button();
-            this.DecimalButton = new System.Windows.Forms.Button();
             this.EqualsButton = new System.Windows.Forms.Button();
+            this.DecimalButton = new System.Windows.Forms.Button();
+            this.ZeroButton = new System.Windows.Forms.Button();
+            this.PlusMinusButton = new System.Windows.Forms.Button();
+            this.PlusButton = new System.Windows.Forms.Button();
+            this.TwoButton = new System.Windows.Forms.Button();
+            this.OneButton = new System.Windows.Forms.Button();
+            this.MinusButton = new System.Windows.Forms.Button();
+            this.SixButton = new System.Windows.Forms.Button();
+            this.FiveButton = new System.Windows.Forms.Button();
+            this.FourButton = new System.Windows.Forms.Button();
+            this.TimesButton = new System.Windows.Forms.Button();
+            this.NineButton = new System.Windows.Forms.Button();
+            this.EightButton = new System.Windows.Forms.Button();
+            this.SevenButton = new System.Windows.Forms.Button();
+            this.DivideButton = new System.Windows.Forms.Button();
+            this.BackspaceButton = new System.Windows.Forms.Button();
+            this.ClearButton = new System.Windows.Forms.Button();
+            this.ResultTextBox = new System.Windows.Forms.TextBox();
             ThreeButton = new System.Windows.Forms.Button();
             this.ButtonTableLayoutPanel.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // ThreeButton
+            // 
+            ThreeButton.BackColor = System.Drawing.Color.LavenderBlush;
+            ThreeButton.Location = new System.Drawing.Point(151, 180);
+            ThreeButton.Name = "ThreeButton";
+            ThreeButton.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            ThreeButton.Size = new System.Drawing.Size(68, 53);
+            ThreeButton.TabIndex = 14;
+            ThreeButton.Text = "3";
+            ThreeButton.UseVisualStyleBackColor = false;
             // 
             // ButtonTableLayoutPanel
             // 
@@ -90,17 +101,177 @@
             this.ButtonTableLayoutPanel.Size = new System.Drawing.Size(299, 299);
             this.ButtonTableLayoutPanel.TabIndex = 0;
             // 
-            // ResultTextBox
+            // EqualsButton
             // 
-            this.ResultTextBox.BackColor = System.Drawing.Color.White;
-            this.ResultTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ResultTextBox.Enabled = false;
-            this.ResultTextBox.ForeColor = System.Drawing.Color.IndianRed;
-            this.ResultTextBox.Location = new System.Drawing.Point(4, 63);
-            this.ResultTextBox.Multiline = true;
-            this.ResultTextBox.Name = "ResultTextBox";
-            this.ResultTextBox.Size = new System.Drawing.Size(290, 74);
-            this.ResultTextBox.TabIndex = 1;
+            this.EqualsButton.BackColor = System.Drawing.Color.Snow;
+            this.EqualsButton.Location = new System.Drawing.Point(225, 239);
+            this.EqualsButton.Name = "EqualsButton";
+            this.EqualsButton.Size = new System.Drawing.Size(68, 53);
+            this.EqualsButton.TabIndex = 19;
+            this.EqualsButton.Text = "=";
+            this.EqualsButton.UseVisualStyleBackColor = false;
+            // 
+            // DecimalButton
+            // 
+            this.DecimalButton.BackColor = System.Drawing.Color.LavenderBlush;
+            this.DecimalButton.Location = new System.Drawing.Point(151, 239);
+            this.DecimalButton.Name = "DecimalButton";
+            this.DecimalButton.Size = new System.Drawing.Size(68, 53);
+            this.DecimalButton.TabIndex = 18;
+            this.DecimalButton.Text = ".";
+            this.DecimalButton.UseVisualStyleBackColor = false;
+            // 
+            // ZeroButton
+            // 
+            this.ZeroButton.BackColor = System.Drawing.Color.LavenderBlush;
+            this.ZeroButton.Location = new System.Drawing.Point(77, 239);
+            this.ZeroButton.Name = "ZeroButton";
+            this.ZeroButton.Size = new System.Drawing.Size(68, 53);
+            this.ZeroButton.TabIndex = 17;
+            this.ZeroButton.Text = "0";
+            this.ZeroButton.UseVisualStyleBackColor = false;
+            // 
+            // PlusMinusButton
+            // 
+            this.PlusMinusButton.BackColor = System.Drawing.Color.Snow;
+            this.PlusMinusButton.Location = new System.Drawing.Point(3, 239);
+            this.PlusMinusButton.Name = "PlusMinusButton";
+            this.PlusMinusButton.Size = new System.Drawing.Size(68, 53);
+            this.PlusMinusButton.TabIndex = 16;
+            this.PlusMinusButton.Text = "±";
+            this.PlusMinusButton.UseVisualStyleBackColor = false;
+            // 
+            // PlusButton
+            // 
+            this.PlusButton.BackColor = System.Drawing.Color.Snow;
+            this.PlusButton.Location = new System.Drawing.Point(225, 180);
+            this.PlusButton.Name = "PlusButton";
+            this.PlusButton.Size = new System.Drawing.Size(68, 53);
+            this.PlusButton.TabIndex = 15;
+            this.PlusButton.Text = "+";
+            this.PlusButton.UseVisualStyleBackColor = false;
+            // 
+            // TwoButton
+            // 
+            this.TwoButton.BackColor = System.Drawing.Color.LavenderBlush;
+            this.TwoButton.Location = new System.Drawing.Point(77, 180);
+            this.TwoButton.Name = "TwoButton";
+            this.TwoButton.Size = new System.Drawing.Size(68, 53);
+            this.TwoButton.TabIndex = 13;
+            this.TwoButton.Text = "2";
+            this.TwoButton.UseVisualStyleBackColor = false;
+            // 
+            // OneButton
+            // 
+            this.OneButton.BackColor = System.Drawing.Color.LavenderBlush;
+            this.OneButton.Location = new System.Drawing.Point(3, 180);
+            this.OneButton.Name = "OneButton";
+            this.OneButton.Size = new System.Drawing.Size(68, 53);
+            this.OneButton.TabIndex = 12;
+            this.OneButton.Text = "1";
+            this.OneButton.UseVisualStyleBackColor = false;
+            // 
+            // MinusButton
+            // 
+            this.MinusButton.BackColor = System.Drawing.Color.Snow;
+            this.MinusButton.Location = new System.Drawing.Point(225, 121);
+            this.MinusButton.Name = "MinusButton";
+            this.MinusButton.Size = new System.Drawing.Size(68, 53);
+            this.MinusButton.TabIndex = 11;
+            this.MinusButton.Text = "-";
+            this.MinusButton.UseVisualStyleBackColor = false;
+            this.MinusButton.Click += new System.EventHandler(this.button13_Click);
+            // 
+            // SixButton
+            // 
+            this.SixButton.BackColor = System.Drawing.Color.LavenderBlush;
+            this.SixButton.Location = new System.Drawing.Point(151, 121);
+            this.SixButton.Name = "SixButton";
+            this.SixButton.Size = new System.Drawing.Size(68, 53);
+            this.SixButton.TabIndex = 10;
+            this.SixButton.Text = "6";
+            this.SixButton.UseVisualStyleBackColor = false;
+            // 
+            // FiveButton
+            // 
+            this.FiveButton.BackColor = System.Drawing.Color.LavenderBlush;
+            this.FiveButton.Location = new System.Drawing.Point(77, 121);
+            this.FiveButton.Name = "FiveButton";
+            this.FiveButton.Size = new System.Drawing.Size(68, 53);
+            this.FiveButton.TabIndex = 9;
+            this.FiveButton.Text = "5";
+            this.FiveButton.UseVisualStyleBackColor = false;
+            // 
+            // FourButton
+            // 
+            this.FourButton.BackColor = System.Drawing.Color.LavenderBlush;
+            this.FourButton.Location = new System.Drawing.Point(3, 121);
+            this.FourButton.Name = "FourButton";
+            this.FourButton.Size = new System.Drawing.Size(68, 53);
+            this.FourButton.TabIndex = 8;
+            this.FourButton.Text = "4";
+            this.FourButton.UseVisualStyleBackColor = false;
+            // 
+            // TimesButton
+            // 
+            this.TimesButton.BackColor = System.Drawing.Color.Snow;
+            this.TimesButton.Location = new System.Drawing.Point(225, 62);
+            this.TimesButton.Name = "TimesButton";
+            this.TimesButton.Size = new System.Drawing.Size(68, 53);
+            this.TimesButton.TabIndex = 7;
+            this.TimesButton.Text = "x";
+            this.TimesButton.UseVisualStyleBackColor = false;
+            // 
+            // NineButton
+            // 
+            this.NineButton.BackColor = System.Drawing.Color.LavenderBlush;
+            this.NineButton.Location = new System.Drawing.Point(151, 62);
+            this.NineButton.Name = "NineButton";
+            this.NineButton.Size = new System.Drawing.Size(68, 53);
+            this.NineButton.TabIndex = 6;
+            this.NineButton.Text = "9";
+            this.NineButton.UseVisualStyleBackColor = false;
+            // 
+            // EightButton
+            // 
+            this.EightButton.BackColor = System.Drawing.Color.LavenderBlush;
+            this.EightButton.Location = new System.Drawing.Point(77, 62);
+            this.EightButton.Name = "EightButton";
+            this.EightButton.Size = new System.Drawing.Size(68, 53);
+            this.EightButton.TabIndex = 5;
+            this.EightButton.Text = "8";
+            this.EightButton.UseVisualStyleBackColor = false;
+            // 
+            // SevenButton
+            // 
+            this.SevenButton.BackColor = System.Drawing.Color.LavenderBlush;
+            this.SevenButton.Location = new System.Drawing.Point(3, 62);
+            this.SevenButton.Name = "SevenButton";
+            this.SevenButton.Size = new System.Drawing.Size(68, 53);
+            this.SevenButton.TabIndex = 4;
+            this.SevenButton.Text = "7";
+            this.SevenButton.UseVisualStyleBackColor = false;
+            // 
+            // DivideButton
+            // 
+            this.DivideButton.BackColor = System.Drawing.Color.Snow;
+            this.DivideButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
+            this.DivideButton.Location = new System.Drawing.Point(225, 3);
+            this.DivideButton.Name = "DivideButton";
+            this.DivideButton.Size = new System.Drawing.Size(68, 53);
+            this.DivideButton.TabIndex = 3;
+            this.DivideButton.Text = "÷";
+            this.DivideButton.UseVisualStyleBackColor = false;
+            // 
+            // BackspaceButton
+            // 
+            this.BackspaceButton.BackColor = System.Drawing.Color.Snow;
+            this.BackspaceButton.Location = new System.Drawing.Point(151, 3);
+            this.BackspaceButton.Name = "BackspaceButton";
+            this.BackspaceButton.Size = new System.Drawing.Size(68, 53);
+            this.BackspaceButton.TabIndex = 2;
+            this.BackspaceButton.Text = "⌫";
+            this.BackspaceButton.UseVisualStyleBackColor = false;
             // 
             // ClearButton
             // 
@@ -114,190 +285,19 @@
             this.ClearButton.UseVisualStyleBackColor = false;
             this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
             // 
-            // BackspaceButton
+            // ResultTextBox
             // 
-            this.BackspaceButton.BackColor = System.Drawing.Color.Snow;
-            this.BackspaceButton.Location = new System.Drawing.Point(151, 3);
-            this.BackspaceButton.Name = "BackspaceButton";
-            this.BackspaceButton.Size = new System.Drawing.Size(68, 53);
-            this.BackspaceButton.TabIndex = 2;
-            this.BackspaceButton.Text = "⌫";
-            this.BackspaceButton.UseVisualStyleBackColor = false;
+            this.ResultTextBox.BackColor = System.Drawing.Color.White;
+            this.ResultTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ResultTextBox.Enabled = false;
+            this.ResultTextBox.ForeColor = System.Drawing.Color.IndianRed;
+            this.ResultTextBox.Location = new System.Drawing.Point(4, 63);
+            this.ResultTextBox.Multiline = true;
+            this.ResultTextBox.Name = "ResultTextBox";
+            this.ResultTextBox.Size = new System.Drawing.Size(290, 74);
+            this.ResultTextBox.TabIndex = 1;
             // 
-            // DivideButton
-            // 
-            this.DivideButton.BackColor = System.Drawing.Color.Snow;
-            this.DivideButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
-            this.DivideButton.Location = new System.Drawing.Point(225, 3);
-            this.DivideButton.Name = "DivideButton";
-            this.DivideButton.Size = new System.Drawing.Size(68, 53);
-            this.DivideButton.TabIndex = 3;
-            this.DivideButton.Text = "÷";
-            this.DivideButton.UseVisualStyleBackColor = false;
-            // 
-            // SevenButton
-            // 
-            this.SevenButton.BackColor = System.Drawing.Color.LavenderBlush;
-            this.SevenButton.Location = new System.Drawing.Point(3, 62);
-            this.SevenButton.Name = "SevenButton";
-            this.SevenButton.Size = new System.Drawing.Size(68, 53);
-            this.SevenButton.TabIndex = 4;
-            this.SevenButton.Text = "7";
-            this.SevenButton.UseVisualStyleBackColor = false;
-            // 
-            // EightButton
-            // 
-            this.EightButton.BackColor = System.Drawing.Color.LavenderBlush;
-            this.EightButton.Location = new System.Drawing.Point(77, 62);
-            this.EightButton.Name = "EightButton";
-            this.EightButton.Size = new System.Drawing.Size(68, 53);
-            this.EightButton.TabIndex = 5;
-            this.EightButton.Text = "8";
-            this.EightButton.UseVisualStyleBackColor = false;
-            // 
-            // NineButton
-            // 
-            this.NineButton.BackColor = System.Drawing.Color.LavenderBlush;
-            this.NineButton.Location = new System.Drawing.Point(151, 62);
-            this.NineButton.Name = "NineButton";
-            this.NineButton.Size = new System.Drawing.Size(68, 53);
-            this.NineButton.TabIndex = 6;
-            this.NineButton.Text = "9";
-            this.NineButton.UseVisualStyleBackColor = false;
-            // 
-            // TimesButton
-            // 
-            this.TimesButton.BackColor = System.Drawing.Color.Snow;
-            this.TimesButton.Location = new System.Drawing.Point(225, 62);
-            this.TimesButton.Name = "TimesButton";
-            this.TimesButton.Size = new System.Drawing.Size(68, 53);
-            this.TimesButton.TabIndex = 7;
-            this.TimesButton.Text = "x";
-            this.TimesButton.UseVisualStyleBackColor = false;
-            // 
-            // FourButton
-            // 
-            this.FourButton.BackColor = System.Drawing.Color.LavenderBlush;
-            this.FourButton.Location = new System.Drawing.Point(3, 121);
-            this.FourButton.Name = "FourButton";
-            this.FourButton.Size = new System.Drawing.Size(68, 53);
-            this.FourButton.TabIndex = 8;
-            this.FourButton.Text = "4";
-            this.FourButton.UseVisualStyleBackColor = false;
-            // 
-            // FiveButton
-            // 
-            this.FiveButton.BackColor = System.Drawing.Color.LavenderBlush;
-            this.FiveButton.Location = new System.Drawing.Point(77, 121);
-            this.FiveButton.Name = "FiveButton";
-            this.FiveButton.Size = new System.Drawing.Size(68, 53);
-            this.FiveButton.TabIndex = 9;
-            this.FiveButton.Text = "5";
-            this.FiveButton.UseVisualStyleBackColor = false;
-            // 
-            // SixButton
-            // 
-            this.SixButton.BackColor = System.Drawing.Color.LavenderBlush;
-            this.SixButton.Location = new System.Drawing.Point(151, 121);
-            this.SixButton.Name = "SixButton";
-            this.SixButton.Size = new System.Drawing.Size(68, 53);
-            this.SixButton.TabIndex = 10;
-            this.SixButton.Text = "6";
-            this.SixButton.UseVisualStyleBackColor = false;
-            // 
-            // MinusButton
-            // 
-            this.MinusButton.BackColor = System.Drawing.Color.Snow;
-            this.MinusButton.Location = new System.Drawing.Point(225, 121);
-            this.MinusButton.Name = "MinusButton";
-            this.MinusButton.Size = new System.Drawing.Size(68, 53);
-            this.MinusButton.TabIndex = 11;
-            this.MinusButton.Text = "-";
-            this.MinusButton.UseVisualStyleBackColor = false;
-            this.MinusButton.Click += new System.EventHandler(this.button13_Click);
-            // 
-            // OneButton
-            // 
-            this.OneButton.BackColor = System.Drawing.Color.LavenderBlush;
-            this.OneButton.Location = new System.Drawing.Point(3, 180);
-            this.OneButton.Name = "OneButton";
-            this.OneButton.Size = new System.Drawing.Size(68, 53);
-            this.OneButton.TabIndex = 12;
-            this.OneButton.Text = "1";
-            this.OneButton.UseVisualStyleBackColor = false;
-            // 
-            // TwoButton
-            // 
-            this.TwoButton.BackColor = System.Drawing.Color.LavenderBlush;
-            this.TwoButton.Location = new System.Drawing.Point(77, 180);
-            this.TwoButton.Name = "TwoButton";
-            this.TwoButton.Size = new System.Drawing.Size(68, 53);
-            this.TwoButton.TabIndex = 13;
-            this.TwoButton.Text = "2";
-            this.TwoButton.UseVisualStyleBackColor = false;
-            // 
-            // ThreeButton
-            // 
-            ThreeButton.BackColor = System.Drawing.Color.LavenderBlush;
-            ThreeButton.Location = new System.Drawing.Point(151, 180);
-            ThreeButton.Name = "ThreeButton";
-            ThreeButton.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            ThreeButton.Size = new System.Drawing.Size(68, 53);
-            ThreeButton.TabIndex = 14;
-            ThreeButton.Text = "3";
-            ThreeButton.UseVisualStyleBackColor = false;
-            // 
-            // PlusButton
-            // 
-            this.PlusButton.BackColor = System.Drawing.Color.Snow;
-            this.PlusButton.Location = new System.Drawing.Point(225, 180);
-            this.PlusButton.Name = "PlusButton";
-            this.PlusButton.Size = new System.Drawing.Size(68, 53);
-            this.PlusButton.TabIndex = 15;
-            this.PlusButton.Text = "+";
-            this.PlusButton.UseVisualStyleBackColor = false;
-            // 
-            // PlusMinusButton
-            // 
-            this.PlusMinusButton.BackColor = System.Drawing.Color.Snow;
-            this.PlusMinusButton.Location = new System.Drawing.Point(3, 239);
-            this.PlusMinusButton.Name = "PlusMinusButton";
-            this.PlusMinusButton.Size = new System.Drawing.Size(68, 53);
-            this.PlusMinusButton.TabIndex = 16;
-            this.PlusMinusButton.Text = "±";
-            this.PlusMinusButton.UseVisualStyleBackColor = false;
-            // 
-            // ZeroButton
-            // 
-            this.ZeroButton.BackColor = System.Drawing.Color.LavenderBlush;
-            this.ZeroButton.Location = new System.Drawing.Point(77, 239);
-            this.ZeroButton.Name = "ZeroButton";
-            this.ZeroButton.Size = new System.Drawing.Size(68, 53);
-            this.ZeroButton.TabIndex = 17;
-            this.ZeroButton.Text = "0";
-            this.ZeroButton.UseVisualStyleBackColor = false;
-            // 
-            // DecimalButton
-            // 
-            this.DecimalButton.BackColor = System.Drawing.Color.LavenderBlush;
-            this.DecimalButton.Location = new System.Drawing.Point(151, 239);
-            this.DecimalButton.Name = "DecimalButton";
-            this.DecimalButton.Size = new System.Drawing.Size(68, 53);
-            this.DecimalButton.TabIndex = 18;
-            this.DecimalButton.Text = ".";
-            this.DecimalButton.UseVisualStyleBackColor = false;
-            // 
-            // EqualsButton
-            // 
-            this.EqualsButton.BackColor = System.Drawing.Color.Snow;
-            this.EqualsButton.Location = new System.Drawing.Point(225, 239);
-            this.EqualsButton.Name = "EqualsButton";
-            this.EqualsButton.Size = new System.Drawing.Size(68, 53);
-            this.EqualsButton.TabIndex = 19;
-            this.EqualsButton.Text = "=";
-            this.EqualsButton.UseVisualStyleBackColor = false;
-            // 
-            // Form1
+            // CalculatorForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
@@ -308,9 +308,10 @@
             this.ForeColor = System.Drawing.Color.IndianRed;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "CalculatorForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculator";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CalculatorForm_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ButtonTableLayoutPanel.ResumeLayout(false);
             this.ResumeLayout(false);

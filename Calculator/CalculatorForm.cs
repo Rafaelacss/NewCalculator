@@ -12,30 +12,25 @@ using System.Windows.Forms;
  * Name: Rafaela Silveira
  * Student number: 300910503
  * Date: August, 11, 2017
- * Description: Calculator Demo Project
- * Version: 0.3 - Transfered project to a new solution 
+ * Description: CalculatorForm class
+ * Version: 0.2 - added formclosing event handler
  */
 
 namespace Calculator
 {
-    public partial class Form1 : Form
+    public partial class CalculatorForm : Form
     {
-        public Form1()
+        public CalculatorForm()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button13_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ClearButton_Click(object sender, EventArgs e)
+        /// <summary>
+        /// This is an event handler for the FormClosing event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void CalculatorForm_FormClosing(object sender, FormClosingEventArgs e)
         {
 
         }
